@@ -1,0 +1,10 @@
+streamlit
+langchain
+openai
+sqlalchemy
+pandas
+matplotlib
+psycopg2-binary
+python-dotenv
+streamlit-lottie
+requests
