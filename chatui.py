@@ -963,21 +963,21 @@ if st.session_state.get('db_initialized', False):
         - "Analyze profit margins by category"
         """)
 
-    # Quick fix buttons for common queries
-    st.markdown("#### 🚀 Quick Actions:")
-    col1, col2, col3 = st.columns(3)
+    # # Quick fix buttons for common queries
+    # st.markdown("#### 🚀 Quick Actions:")
+    # col1, col2, col3 = st.columns(3)
 
-    with col1:
-        if st.button("📝 First 5 Customers", key="quick_first_5"):
-            st.session_state.messages.append({"role": "user", "content": "Show me the first 5 customers"})
-            st.rerun()
+    # with col1:
+    #     if st.button("📝 First 5 Customers", key="quick_first_5"):
+    #         st.session_state.messages.append({"role": "user", "content": "Show me the first 5 customers"})
+    #         st.rerun()
 
-    with col2:
-        if st.button("💰 Top Sales", key="quick_top_sales"):
-            st.session_state.messages.append({"role": "user", "content": "Who are the top 10 customers by sales?"})
-            st.rerun()
+    # with col2:
+    #     if st.button("💰 Top Sales", key="quick_top_sales"):
+    #         st.session_state.messages.append({"role": "user", "content": "Who are the top 10 customers by sales?"})
+    #         st.rerun()
 
-    with col3:
-        if st.button("📊 Sales by Region", key="quick_region_sales"):
-            st.session_state.messages.append({"role": "user", "content": "What are the total sales by region?"})
-            st.rerun()
+    # with col3:
+    #     if st.button("📊 Sales by Region", key="quick_region_sales"):
+    #         st.session_state.messages.append({"role": "user", "content": "What are the total sales by region?"})
+    #         st.rerun()
