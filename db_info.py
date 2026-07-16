@@ -128,13 +128,13 @@
 #     elif database_choice==2:
 
 #         db_username='postgres'
-#         password='pavan'
+#         password='your-password'
 #         host='localhost'
 #         port=5432
 #         db='hrdata'
 
 #         # db_username='postgres'
-#         # password='3033'
+#         # password='...'
 #         # db='Employees'
 #         start_str='postgresql+psycopg2://'
 #         db_uri=f'{start_str}{db_username}:{password}@{host}:{port}/{db}'
@@ -340,7 +340,7 @@ def get_db_uri(database_choice, db_filename=''):
     elif database_choice == 2:
         # PostgreSQL
         db_username = 'postgres'
-        password = 'pavan'
+        password = os.environ.get('MYSQL_PASSWORD', '')
         host = 'localhost'
         port = 5432
         db = 'hrdata'
